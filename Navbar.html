@@ -1,0 +1,76 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .navbar .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .nav-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000;
+            font-size: 14px;
+        }
+        .navbar .nav-links .cta {
+            background-color: #7b61ff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        .navbar .nav-links .cta i {
+            margin-left: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .navbar .nav-links {
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+            }
+            .navbar .nav-links a {
+                margin: 5px 0;
+            }
+            .navbar .nav-links .cta {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">QIGGZ</div>
+        <div class="nav-links">
+            <a href="#">License Agreement</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Internal</a>
+            <a href="#" class="cta">How It Work <i class="fas fa-question-circle"></i></a>
+        </div>
+    </div>
+</body>
+</html>
